@@ -11,6 +11,9 @@ For resources that contain datastore records editing data dictionary is limited 
 
 **Auth required** : YES, [details](https://docs.ckan.org/en/2.9/api/#authentication-and-api-tokens).
 
+**Fields**: https://docs.ckan.org/en/2.9/maintaining/datastore.html#fields
+* **Field types**: https://docs.ckan.org/en/2.9/maintaining/datastore.html#valid-types
+
 
 **Data example**
 
@@ -46,6 +49,10 @@ For resources that contain datastore records editing data dictionary is limited 
 **Method** : `POST`
 
 **Auth required** : YES, [details](https://docs.ckan.org/en/2.9/api/#authentication-and-api-tokens).
+
+**Fields**: https://docs.ckan.org/en/2.9/maintaining/datastore.html#fields
+* **Field types**: https://docs.ckan.org/en/2.9/maintaining/datastore.html#valid-types
+
 
 **Data example**
 
