@@ -17,14 +17,15 @@ class ResourcedictionaryPlugin(plugins.SingletonPlugin):
     def update_config(self, config_):
         toolkit.add_template_directory(config_, 'templates')
         toolkit.add_public_directory(config_, 'public')
-        toolkit.add_resource('assets',
-                             'resourcedictionary')
+        toolkit.add_resource('assets', 'resourcedictionary')
 
         # Add `dictionary_fields` resource extra field in config
         # in order to add resource dictionary fields in SOLR index
-        config_[u'ckan.extra_resource_fields'] = u'dictionary_fields ' \
-                                                 u'dictionary_labels ' \
-                                                 u'dictionary_notes'
+        config_['ckan.extra_resource_fields'] = [
+            'dictionary_fields',
+            'dictionary_labels',
+            'dictionary_notes'
+            ]
 
     # IBlueprint
 
